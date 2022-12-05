@@ -1,4 +1,3 @@
--- list all tables in database passed as argument
--- cat [filename] | mysql -hlocalhost -uroot -p mysql
+-- create table; shouldn't fail if already exists
 
-SHOW tables;
+CREATE TABLE IF NOT EXISTS first_table (id INT, name VARCHAR(256));
